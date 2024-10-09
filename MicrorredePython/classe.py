@@ -8,7 +8,9 @@ class Microgrid:
 
 
 class Controller:
-    def __init__(self,Np,Nu,delta,lambda_,alpha,Ymax,Ymin,Umax,Umin,DeltaUmax,DeltaUmin,Pbatmax,Pbatmin,DeltaPbatmax,DeltaPbatmin,ref):
+    def __init__(self, Np, Nu, delta, lambda_, alpha, Ymax, Ymin, 
+                        Umax, Umin, DeltaUmax, DeltaUmin, 
+                        Pbatmax, Pbatmin, DeltaPbatmax, DeltaPbatmin, ref):
         self.Np = Np
         self.Nu = Nu
         self.delta = delta

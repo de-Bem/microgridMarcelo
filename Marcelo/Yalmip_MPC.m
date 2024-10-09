@@ -26,7 +26,7 @@ for k = 2:N+1
     constraints = [constraints, y_min <= x(1:(nx-2),k) <=  y_max];
     constraints = [constraints, [du_min;du_min] <= du(:,k) <= [du_max;du_max]];
     constraints = [constraints, u_min <= x(nx+1:nx+2,k+1) <= u_max];
-    constraints =[constraints, Pbat(1,k)==-x(nx,k)-x(nx-1,k)-x(nx+1,k+1)-x(nx+2,k+1)];
+    constraints = [constraints, Pbat(1,k)==-x(nx,k)-x(nx-1,k)-x(nx+1,k+1)-x(nx+2,k+1)];
     %constraints = [constraints, -0.4 <= Pbat(1,k)-Pbat(1,k-1) <= 0.4];   
     constraints = [constraints, -0.4 <= Pbat(1,k) <= 0.4];
     
